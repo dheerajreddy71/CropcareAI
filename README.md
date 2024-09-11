@@ -78,10 +78,6 @@ Note that, for now it only supports following crops
   python app.py
   ```
 - Open the localhost url provided after running `app.py` and now you can use the project locally in your web browser.
-## DEMO
-
-- ### Disease Detection system
-![demo](https://media.giphy.com/media/NnMwEp2tGZdfnJbyjr/giphy.gif)
 
 
 ## Usage ⚙️
