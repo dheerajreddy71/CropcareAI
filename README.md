@@ -15,8 +15,6 @@
     - For the last application, that is the plant disease prediction application, the user can input an image of a diseased plant leaf, and the application will predict what disease it is and will also give a little background about the disease and suggestions to cure it.
 
 ## DATA SOURCE 📊
-- [Crop recommendation dataset ](https://www.kaggle.com/atharvaingle/crop-recommendation-dataset) (custom built dataset)
-- [Fertilizer suggestion dataset](https://github.com/Gladiator07/Harvestify/blob/master/Data-processed/fertilizer.csv) (custom built dataset)
 - [Disease detection dataset](https://www.kaggle.com/vipoooool/new-plant-diseases-dataset)
 
 ## Notebooks 📓
@@ -43,11 +41,6 @@
 
 
 ## How to use 💻
-- Crop Recommendation system ==> enter the corresponding nutrient values of your soil, state and city. Note that, the N-P-K (Nitrogen-Phosphorous-Pottasium) values to be entered should be the ratio between them. Refer [this website](https://www.gardeningknowhow.com/garden-how-to/soil-fertilizers/fertilizer-numbers-npk.htm) for more information.
-Note: When you enter the city name, make sure to enter mostly common city names. Remote cities/towns may not be available in the [Weather API](https://openweathermap.org/) from where humidity, temperature data is fetched.
-
-- Fertilizer suggestion system ==> Enter the nutrient contents of your soil and the crop you want to grow. The algorithm will tell which nutrient the soil has excess of or lacks. Accordingly, it will give suggestions for buying fertilizers.
-
 - Disease Detection System ==> Upload an image of leaf of your plant. The algorithm will tell the crop type and whether it is diseased or healthy. If it is diseased, it will tell you the cause of the disease and suggest you how to prevent/cure the disease accordingly.
 Note that, for now it only supports following crops
 
@@ -74,7 +67,7 @@ Note that, for now it only supports following crops
 ## How to run locally 🛠️
 - Before the following steps make sure you have [git](https://git-scm.com/download), [Anaconda](https://www.anaconda.com/) or [miniconda](https://docs.conda.io/en/latest/miniconda.html) installed on your system
   ```
-  ❯ git clone -b deploy https://github.com/AnMol12499/CropcareAI.git
+  ❯ git clone -b deploy https://github.com/dheerajreddy71/CropcareAI.git
   ```
 - `deploy` branch has only the code required for deploying the app (rest of the code that was used for training the models, data preparation can be accessed on `master` branch)
 - It is highly recommended to clone the deploy branch for running the project locally (the further steps apply only if you have the deploy branch cloned)
@@ -91,15 +84,6 @@ Note that, for now it only supports following crops
 - Open the localhost url provided after running `app.py` and now you can use the project locally in your web browser.
 ## DEMO
 
-- ### Crop recommendation system
-
-![demo](https://media.giphy.com/media/90JbjdAa5nDq3TJh5u/giphy.gif)
-
-- ### Fertilizer suggestion system
-
-![demo](https://media.giphy.com/media/FLftUXMFo8N2bBjAXq/giphy.gif)
-
-
 - ### Disease Detection system
 ![demo](https://media.giphy.com/media/NnMwEp2tGZdfnJbyjr/giphy.gif)
 
@@ -107,15 +91,4 @@ Note that, for now it only supports following crops
 ## Usage ⚙️
 You can use this project for further developing it and adding your work in it. If you use this project, kindly mention the original source of the project and mention the link of this repo in your report.
 
-## Further Improvements 📈
-This was my first big project so there are lot of things to improve upon
 
-- CSS code is totally messed up :pensive: (some code in file and some inline)
-- Frontend can be made more nicer (PS: I suck at frontend development) :cry:	
-- More data can be collected manually via web scrapping to make the system more accurate :monocle_face:	
-- Additional plant images can be collected to make the disease detection part more robust and generalized :face_with_head_bandage:
-- Modularized code can be written instead of writing in Jupyter Notebooks (will follow this in upcoming projects)
-
-
-## License 📝
-This project is licensed under [GNU (GENERAL PUBLIC LICENSE)](https://github.com/AnMol12499/CropcareAI/blob/main/LICENSE)
